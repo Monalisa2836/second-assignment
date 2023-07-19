@@ -217,7 +217,7 @@ nav {
 #watch-now {
   color: #ff42a5;
 }
-.shadow_img {
+.shadow_img:hover {
   filter: blur(2px);
 }
 
