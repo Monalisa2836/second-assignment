@@ -21,6 +21,7 @@ nav {
 .logo-container {
   display: flex;
   align-items: center;
+  margin-left: 80px;
 }
 .logo-container img {
   width: 86px;
@@ -60,23 +61,102 @@ nav {
 }
 /* nav styles ends here */
 
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-image: url(images/Group\ 14.png);
+  background-repeat: no-repeat;
+}
+.banner-description {
+  margin-left: 80px;
+}
+.banner-description h3 {
+  color: #0b0223;
+  font-size: 40px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-bottom: 0;
+}
+
+.banner-description h1 {
+  font-size: 80px;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0;
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.banner-description p {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: lowercase;
+}
+.btn-1 {
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 48px;
+  background: var(--linear, linear-gradient(90deg, #ff42a5 0%, #ff42a5 100%));
+}
+.btn-2 {
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 48px;
+  background: #4ec5f7;
+}
+
+.banner-images img {
+  height: 680px;
+  width: 646px;
+}
 
 @media screen and (max-width: 576px) {
   nav,
-  .nav-items-container {
+  .nav-items-container,
+  .banner-container {
     flex-direction: column;
   }
   .nav-items-container {
     align-items: center;
   }
-  .logo-container {
-    padding-left: 40px;
+  .banner-images img{
+    width: 400px;
+    height: 400px;
+  }
+  .banner-description {
+    margin-left: 20px;
+  }
+  .banner-container{
+    background-image: none;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
-    nav{
-        flex-direction: column;
-        align-items: center;
-    }
+  nav, .banner-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .banner-container{
+    background-image: none;
+  }
+  .banner-images img{
+    width: 400px;
+    height: 400px;
+  }
+  .logo-container,.banner-description {
+    margin-left: 0;
+  }
 }
