@@ -243,11 +243,79 @@ nav {
   left: -100px;
 }
 /* fourth section styles ends here */
+.different-games {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 66, 165, 0.03) 0%,
+    rgba(255, 66, 165, 0.03) 100%
+  );
+  padding: 50px 50px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  gap: 20px;
+}
 
+.game {
+  display: flex;
+  width: 243px;
+  height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  border-radius: 50px;
+  background: #fff;
+}
+.game:hover {
+  border: 1px solid #ff42a5;
+  cursor: grab;
+  color: #ff42a5;
+}
+/* last section styles ends here */
 
-
-
-
+footer {
+  background: #0b0223;
+  color: #fff;
+  padding: 80px;
+  text-align: center;
+}
+.footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-logo img {
+  width: 86px;
+  height: 40px;
+}
+.footer-logo p {
+  font-size: 30px;
+  font-weight: 700;
+}
+.socials {
+  margin-bottom: 20px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+  padding-left: 50px;
+}
+.socials-icons span {
+  padding-left: 50px;
+}
+.policies {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 50px;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+}
+footer p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
 
 @media screen and (max-width: 576px) {
   nav,
@@ -302,6 +370,13 @@ nav {
     position: absolute;
     bottom: 30px;
     left: 50px;
+  }
+  .socials a {
+    padding-left: 0;
+    padding-right: 5px;
+  }
+  .socials-icons span {
+    padding-left: 10px;
   }
 }
 
