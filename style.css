@@ -189,7 +189,6 @@ nav {
   font-weight: 400;
   line-height: 30px;
 }
-/* third section ends here */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 2fr);
@@ -203,12 +202,59 @@ nav {
   font-weight: 500;
   line-height: 25px;
 }
+/* third section ends here */
+
+.fourth-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+  padding-left: 100px;
+}
+.fourth-sec-des {
+  text-align: right;
+}
+.fourth-sec-des h1 {
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  margin-bottom: 0;
+}
+.fourth-sec-des span {
+  background: linear-gradient(180deg, #f948b2 0%, #8758f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.fourth-sec-des p {
+  color: #534c64;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+  width: 310px;
+}
+
+.fourth-img {
+  position: relative;
+}
+.second-img {
+  position: absolute;
+  bottom: -70px;
+  left: -100px;
+}
+/* fourth section styles ends here */
+
+
+
+
+
 
 @media screen and (max-width: 576px) {
   nav,
   .nav-items-container,
   .banner-container,
-  .second-section {
+  .second-section,
+  .fourth-section {
     flex-direction: column;
   }
   .nav-items-container {
@@ -237,16 +283,33 @@ nav {
   .sec-des {
     width: auto;
   }
-  .grid-container{
+  .grid-container {
     grid-template-columns: 1fr;
     padding-left: 40px;
+  }
+  .fourth-section {
+    padding-left: 0;
+  }
+  .fourth-sec-des {
+    text-align: center;
+  }
+  .first-img img {
+    width: 300px;
+  }
+  .second-img img {
+    width: 160px;
+    height: 180px;
+    position: absolute;
+    bottom: 30px;
+    left: 50px;
   }
 }
 
 @media screen and (min-width: 577px) and (max-width: 992px) {
   nav,
   .banner-container,
-  .second-section {
+  .second-section,
+  .fourth-section {
     flex-direction: column;
     align-items: center;
   }
@@ -264,10 +327,11 @@ nav {
   .banner-description {
     margin-left: 0;
   }
-  .second-sec-description {
+  .second-sec-description,
+  .fourth-sec-des {
     text-align: center;
   }
-  .grid-container{
+  .grid-container {
     grid-template-columns: repeat(2, 1fr);
     padding-left: 25px;
   }
