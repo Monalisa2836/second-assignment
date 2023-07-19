@@ -202,6 +202,25 @@ nav {
   font-weight: 500;
   line-height: 25px;
 }
+.video-btn {
+  z-index: 2;
+  position: relative;
+  left: 40%;
+  bottom: 38%;
+}
+.watch_now {
+  z-index: 2;
+  position: relative;
+  left: 35%;
+  bottom: 38%;
+}
+#watch-now {
+  color: #ff42a5;
+}
+.shadow_img {
+  filter: blur(2px);
+}
+
 /* third section ends here */
 
 .fourth-section {
@@ -290,6 +309,7 @@ footer {
   height: 40px;
 }
 .footer-logo p {
+  color: white;
   font-size: 30px;
   font-weight: 700;
 }
